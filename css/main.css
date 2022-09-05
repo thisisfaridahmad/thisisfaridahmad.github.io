@@ -1,0 +1,340 @@
+@font-face{
+    font-family: par-text;
+    src: url(text.ttf)
+}
+@font-face{
+    font-family: myfont;
+    src: url(font.otf)
+}
+@keyframes comedown{
+    from{top: -300}
+    to{top: -150;}
+}
+@keyframes slides{
+    0%{
+        transform: scaleY(0);
+        opacity: 0.1;
+    }
+    100%{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+*{
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    transition: 0.2s;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: par-text;
+}
+body{
+    width: auto;
+    overflow-x: hidden;
+}
+#second, #third,#fourth,#fivth{
+    position: relative;
+    text-align: center;
+    height: 30px;
+    animation-name: slides;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    -webkit-animation-name: slides;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+}
+.main{
+    text-align: center;
+    position: relative;
+    top: 4em;
+    margin: auto;
+    width: 100%;
+}
+#slide2div, #slide3div,#slide4div,#slide5div{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    animation-name: slides;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.welcome{
+    position: relative;
+    text-align: center;
+    animation-name: slides;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+.welcome h1{
+    cursor: default;
+    position: absolute;
+    font-family: myfont;
+    right: 0;
+    left: 0;
+}
+.inter{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 20%;
+    animation-name: slides;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    font-size: 1.2em;
+}
+.inter p{
+    font-family: monospace;
+    text-transform: capitalize;
+}
+.slidebar a{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.7em;
+    position: fixed;
+}
+.slidebar a:hover, .slidebar a:focus, .slidebar a:visited{
+    box-shadow: 0px 0px 90px 1px black;
+}
+.left{
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    left: 0;
+    width: auto;
+    top: 50%;
+}
+.right{
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: auto;
+}
+#help{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 1%;
+    display: none;
+    transition: 3s;
+    animation-name: comedown;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    -webkit-transition: 3s;
+    -webkit-animation-name: comedown;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 3s;
+}
+#theme, #theme2{
+    background-image: url(../svg/redo.svg);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    z-index: 1;
+}
+#theme:hover, #theme2:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+#theme2{
+    display: none;
+    background-image: url(../svg/redo-white.svg);
+    color: white;
+}
+.skillsDiv{
+    position: relative;
+    width: 100%;
+}
+#brain{
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2em;
+    margin: auto;
+    cursor: pointer;
+    width: 34px;
+    height: 30px;
+    background-image: url(../svg/brain.svg);!important
+}
+#brain:hover{
+    text-shadow: 0px 0px 40px tomato;
+}
+.skill{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 140px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    display: inline-block;
+    font-family: monospace;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.8s;
+    overflow: hidden;
+}
+.skill:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.price{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.basic-price{
+    display: inline-block;
+    margin: 20px;
+}
+.medium-price{
+    display: inline-block;
+    margin: 20px;
+}
+.pro-price{
+    display: inline-block;
+    margin: 20px;
+}
+.price h2{
+    font-family: par-text;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 10px 1px rgba(770,60,7770,0.2);
+    width: 50vw;
+}
+li{
+    border-bottom: 1px solid black;
+    padding: 20px;
+    font-family: monospace;
+}
+.contact-links{
+    width: 50%;
+    margin-right: 0;
+    margin-left: 0;
+    margin: auto;
+    position: relative;
+    padding: 50px;
+}
+.insta{
+    background-image: url(../svg/instagram.svg);
+    width: 33px;
+    height: 38px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+.github{
+    background-image: url(../svg/github.svg);
+    width: 35px;
+    height: 36px;
+    right: 0;
+    position: absolute;
+}
+.twitter{
+    background-image: url(../svg/twitter.svg);
+    width: 35px;
+    height: 35px;
+    left: 0;
+    position: absolute;
+}
+.price h3{
+    border: 1px solid black;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-family: monospace;
+}
+.about-more{
+    width: 80%;
+    display: inline-block;
+    height: auto;
+}
+.about-more p:first-child{
+    font-family: par-text;
+    text-align: center;
+}
+.about-more p, .about-more b, .about-more a{
+    font-size: 1.2em;
+    text-align: center;
+    font-family: monospace;
+}
+.project-main{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.project-main div h3{
+    font-family: monospace;
+    font-size: 1.4em;
+}
+.project-main div p{
+    font-family: monospace;
+    font-size: 1.2em;
+}
+.project-main div img{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    width: 100%;
+}
+.project-main div a{
+    text-decoration: underline;
+}
+#canvas{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+@media screen and (min-width:2000px){
+    .inter{
+        font-size: 2em;
+    }
+    .welcome{
+        font-size: 3em;
+    }
+    .penguin{
+        width: 30em;
+        height: 30em;
+    }
+    .right{
+        font-size: 3em;
+    }
+    .left{
+        font-size: 3em;
+    }
+}
+
+/*
+#closediv{
+    display: none;
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    color: red;
+    font-family: myfont;
+    font-size: 2.5em;
+}*/
