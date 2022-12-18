@@ -1,4 +1,2 @@
-<h1>Heya Stranger</h1> <br>
-this is my portfolio <br>
-check it out and if you have any suggestion please let me know.
-#Thanks
+<center><h1>Hello Stranger</h1></center> <br>
+<h2>Thanks</h2>
