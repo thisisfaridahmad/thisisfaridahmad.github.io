@@ -286,7 +286,12 @@ li{
 .project-main{
     width: 90%;
     margin: auto;
+    text-align: left;
     position: relative;
+}
+.project-main p{
+    font-family: monospace;
+    font-size: 1.4em;
 }
 .project-main div h3{
     font-family: monospace;
