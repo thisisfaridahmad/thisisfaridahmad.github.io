@@ -97,7 +97,6 @@ function showSlides(n) {
         document.getElementById('second'),
         document.getElementById('third'),
         document.getElementById('fourth'),
-        document.getElementById('fivth'),
     ];
     if (n > slides.length) { 
         slideIndex = 1;
