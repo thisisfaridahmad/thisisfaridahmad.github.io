@@ -10,7 +10,6 @@ var peng = {
         document.getElementsByClassName('slide')[2],
         document.getElementsByClassName('slide')[3],
         document.getElementsByClassName('slide')[4],
-        document.getElementsByClassName('slide')[5],
     ]
 //    close : document.getElementById('closediv')
 };
